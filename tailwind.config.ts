@@ -9,19 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        body: ['var(--font-glacial-indifference)'],
-        header: ['var(--font-sports-world)']
+        body: ['var(--font-lato)'],
+        header: ['var(--font-cooper)']
       },
       colors: {
-        green: {
-          500: "#26352E",
-          600: "#1f2c26"
+        blue: {
+          500: "#335CA9",
+          600: "#0C55CF"
         },
         orange1: {
-          500: "#F25F40"
+          500: "#ff5757"
         },
         orange2: {
-          500: "#EE6D45"
+          500: "#ff7d7d"
         },
         cream: {
           500: "#FBF6DE"
