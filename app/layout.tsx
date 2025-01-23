@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${glacialIndifference.variable} ${sportsWorld.variable}`}>
-    <GoogleAnalytics gaId="G-8GQ8EYPGLH"/>
+    <GoogleAnalytics gaId="G-6PECGC3YP8"/>
       <body>
       <Nav/>
       {children}
