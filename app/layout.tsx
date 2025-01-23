@@ -7,8 +7,8 @@ import {Lato} from "next/font/google"
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
-  title: "Vote Voight",
-  description: "Curt Voight for Senate 33",
+  title: "Angela Bradsky Rafferty",
+  description: "Angela Bradsky Rafferty for area 3 Schoolboard",
 };
 
 const cooper = localFont({
