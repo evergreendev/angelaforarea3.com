@@ -13,11 +13,8 @@ const Nav = () => {
         </div>
         <div className="bg-gray-100 text-blue-600 w-full flex flex-wrap justify-between sticky top-0 z-20 shadow-md">
             <div
-                className="z-10 py-2 px-6 font-body w-full max-w-screen-xl mx-auto items-center justify-between text-xl lg:flex ">
-                <Link href="/">
-                    <Image className="w-40" src={logo} alt="Angela Bradsky Rafferty for Area 3 School Board"/>
-                </Link>
-                <Link className="ml-auto mr-5 size-10 flex items-center justify-around"
+                className="z-10 py-2 px-6 font-body w-full max-w-screen-xl mx-auto items-center justify-between text-xl flex ">
+                <Link className="mr-5 size-10 flex items-center justify-around"
                                              href="">
                     <FontAwesomeIcon icon={faFacebook} size="lg" width="24px"/>
                 </Link>
