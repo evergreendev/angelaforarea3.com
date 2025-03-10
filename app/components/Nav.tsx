@@ -19,7 +19,7 @@ const Nav = () => {
                     <FontAwesomeIcon icon={faFacebook} size="lg" width="24px"/>
                 </Link>
                 <div className="space-x-8">
-                    <Link href="/donate"
+                    <Link href="https://secure.anedot.com/angela-for-area-3/donate"
                           className="rounded hover:bg-orange2-500 text-cream-500 border-2 p-3 py-1 bg-orange1-500 border-orange1-500">Donate</Link>
                 </div>
 

@@ -8,11 +8,13 @@ export default function Home() {
     return (
         <main className="flex flex-col items-center justify-between text-cream-500 bg-blue-500">
 
-            <div className="flex w-full flex-col relative bg-gradient-to-br from-gray-100 to-blue-100 text-blue-950 pb-14">
+            <div
+                className="flex w-full flex-col relative bg-gradient-to-br from-gray-100 to-blue-100 text-blue-950 pb-14">
 
                 <div className="bg-[#004aad] text-center bottom-0 mb-5">
-                    <Image className="w-full max-w-md mx-auto" src={logo} alt="Angela Bradsky Rafferty for Area 3 School Board"/>
-{/*                    <h1 className="font-header px-6 text-4xl lg:text-6xl text-blue-500 mb-3 uppercase">Angela Bradsky
+                    <Image className="w-full max-w-md mx-auto" src={logo}
+                           alt="Angela Bradsky Rafferty for Area 3 School Board"/>
+                    {/*                    <h1 className="font-header px-6 text-4xl lg:text-6xl text-blue-500 mb-3 uppercase">Angela Bradsky
                         Rafferty</h1>
                     <h2 className="font-body text-xl lg:text-5xl text-center text-blue-500 bg-cream-500 uppercase">For
                         Area 3 School Board</h2>*/}
@@ -42,6 +44,13 @@ export default function Home() {
 
             </div>
 
+            <div className="bg-blue-200 w-full flex justify-around ">
+                <div className="max-w-screen-lg py-10 text-center px-2">
+                    <Link className="bg-orange1-500 text-white p-2 rounded text-4xl font-bold" href="/RCArea3.pdf">View Area 3 Map</Link>
+                </div>
+            </div>
+
+
             <div className="bg-blue-500 w-full flex justify-around">
                 <div className="max-w-screen-lg py-10 text-center px-2">
 
@@ -50,7 +59,9 @@ export default function Home() {
                     <p className="text-4xl">Election Day: <span className="font-bold">June 3, 2025</span></p>
                 </div>
             </div>
-            <div className="bg-gradient-to-br from-gray-100 to-blue-100 w-full flex flex-wrap items-center justify-center" id="issues">
+            <div
+                className="bg-gradient-to-br from-gray-100 to-blue-100 w-full flex flex-wrap items-center justify-center"
+                id="issues">
                 <Image className="w-full max-w-lg" src={angela2} alt=""/>
                 <div className="flex flex-col justify-center max-w-screen-lg p-10">
                     <h2 className="font-body text-5xl mb-6 mt-8 uppercase text-orange1-500">Priorities
@@ -64,14 +75,19 @@ export default function Home() {
                         </div>
                         <div
                             className="grow text-3xl p-3 border-2 border-white m-2">
-                            <strong>Balanced Education:</strong> Promote well-rounded classrooms by maximizing instructional time, fostering meaningful learning, reducing excessive testing, and closing learning gaps.
+                            <strong>Balanced Education:</strong> Promote well-rounded classrooms by maximizing
+                            instructional time, fostering meaningful learning, reducing excessive testing, and closing
+                            learning gaps.
                         </div>
                         <div
                             className="grow text-3xl p-3 border-2 border-white m-2">
-                            <strong>Supported Teachers:</strong> Equip teachers with the tools and resources they need to help every student thrive, while supporting teachers and staff in creating classroom environments that inspire students to succeed.
+                            <strong>Supported Teachers:</strong> Equip teachers with the tools and resources they need
+                            to help every student thrive, while supporting teachers and staff in creating classroom
+                            environments that inspire students to succeed.
                         </div>
-                        <Link href="/donate"
-                              className="m-2 rounded hover:bg-orange2-500 text-cream-500 border-2 p-3 py-1 bg-orange1-500 border-orange1-500 text-4xl">Make a Donation</Link>
+                        <Link href="https://secure.anedot.com/angela-for-area-3/donate"
+                              className="m-2 rounded hover:bg-orange2-500 text-cream-500 border-2 p-3 py-1 bg-orange1-500 border-orange1-500 text-4xl">Make
+                            a Donation</Link>
                     </div>
                 </div>
 
