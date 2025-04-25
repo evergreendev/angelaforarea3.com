@@ -59,6 +59,42 @@ export default function Home() {
                     <p className="text-4xl">Election Day: <span className="font-bold">June 3, 2025</span></p>
                 </div>
             </div>
+            <div className="bg-gradient-to-br from-gray-100 to-blue-100 w-full" id="videos">
+                <div className="max-w-screen-2xl mx-auto py-10 px-4">
+                    <h2 className="font-body text-5xl mb-8 text-center text-orange1-500 uppercase">Campaign Videos</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="bg-blue-600 rounded-lg overflow-hidden shadow-lg">
+                            <video
+                                className="w-full aspect-video"
+                                controls
+                            >
+                                <source src="/media/Angela Bradsky-Rafferty Web 1.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div className="bg-blue-600 rounded-lg overflow-hidden shadow-lg">
+                            <video
+                                className="w-full aspect-video"
+                                controls
+                            >
+                                <source src="/media/Angela Bradsky-Rafferty Web 2.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div className="bg-blue-600 rounded-lg overflow-hidden shadow-lg">
+                            <video
+                                className="w-full aspect-video"
+                                controls
+                            >
+                                <source src="/media/Angela Bradsky-Rafferty Web 3.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div
                 className="bg-gradient-to-br from-gray-100 to-blue-100 w-full flex flex-wrap items-center justify-center"
                 id="issues">
