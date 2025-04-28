@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
     port: Number(process.env.NEXT_PUBLIC_EMAIL_PORT) || 0,
     auth: {
         user: process.env.NEXT_PUBLIC_EMAIL_USERNAME,
-        pass: process.env.NEXT_PUBLIC_PASSWORD,
+        pass: process.env.PASSWORD,
     },
 });
 

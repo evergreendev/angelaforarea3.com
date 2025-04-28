@@ -1,7 +1,31 @@
 "use client"
 import React from 'react';
 import {useActionState} from 'react';
+import {useFormStatus} from 'react-dom';
 import {handleVolunteer, handleYardSign} from "@/app/services/mail";
+import Spinner from '@/app/components/Spinner';
+
+// Submit button component that shows a spinner when the form is being submitted
+const SubmitButton: React.FC<{text: string}> = ({ text }) => {
+    const { pending } = useFormStatus();
+
+    return (
+        <button
+            type="submit"
+            disabled={pending}
+            className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:outline-none disabled:bg-blue-400"
+        >
+            {pending ? (
+                <span className="flex items-center justify-center">
+                    <Spinner size="sm" className="mr-2" />
+                    <span>Submitting...</span>
+                </span>
+            ) : (
+                text
+            )}
+        </button>
+    );
+};
 
 const Page: React.FC = () => {
     const [yardSignIsSubmitted, yardSignFormAction] = useActionState(handleYardSign, {isSubmitted:false});
@@ -51,12 +75,7 @@ const Page: React.FC = () => {
                                         required
                                     />
                                 </div>
-                                <button
-                                    type="submit"
-                                    className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:outline-none"
-                                >
-                                    Submit Request
-                                </button>
+                                <SubmitButton text="Submit Request" />
                             </form>}
                     </div>
                     <div className="grow border p-6">
@@ -122,12 +141,7 @@ const Page: React.FC = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <button
-                                    type="submit"
-                                    className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:outline-none"
-                                >
-                                    Submit Request
-                                </button>
+                                <SubmitButton text="Submit Request" />
                             </form>}
                     </div>
                 </div>
