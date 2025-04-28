@@ -1,6 +1,6 @@
 "use server"
-const adminMail = "noreply@angelaforarea3.com"/*todo Change this*/
-const toEmails = "joe@egmrc.com"
+const adminMail = "noreply@angelaforarea3.com"
+const toEmails = "angela@angelaforarea3.com"
 
 import nodemailer from 'nodemailer';
 
