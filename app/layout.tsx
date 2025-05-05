@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import Footer from "@/app/components/Footer";
 import Nav from "@/app/components/Nav";
 import {Lato} from "next/font/google"
-import { GoogleAnalytics } from '@next/third-parties/google'
+import {GoogleAnalytics, GoogleTagManager} from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: "Angela Bradsky Rafferty",
@@ -31,7 +31,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cooper.variable} ${lato.variable}`}>
     <GoogleAnalytics gaId="G-6PECGC3YP8"/>
-      <body>
+    <GoogleTagManager gtmId="GTM-TD9B6B5Q" />
+    <body>
       <Nav/>
       {children}
       <Footer/>
